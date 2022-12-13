@@ -84,6 +84,8 @@ namespace ChickenDodge
 
     if (gameOver)
     {
+      AudioSystem::SendEvent("end");
+
       Ensures(bestPlayer != nullptr);
       Ensures(worstPlayer != nullptr);
       winEvent.Trigger(*bestPlayer, *worstPlayer);

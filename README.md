@@ -103,14 +103,14 @@ La première étape est d'installer ces logiciels, [FMOD Studio et FMOD Engine](
 Sous Windows, CMake devrait trouver automatiquement les fichiers pertinents de FMOD, si ils ont été installés à l'endroit par défaut. Si vous utilisez la version Linux, créer un lien (ou copier) du dossier `api` du FMOD Engine téléchargé vers `simplege/extern/fmod`.
 
 La liste de sons à déclencher est la suivante, un exemple est fait dans la méthode "ShowImage" du composant *CountdownComponent*:
-- Coup d’épée (“attack”)
-- Décompte du début : à chaque étape (“countdown”)
-- Ramasser un rupee (“rupee_pickup”)
-- Ramasser un cœur (“heart_pickup”)
-- Frapper un poulet (“chicken_hit”)
-- Rupee qui tombe par terre (“rupee_drop”)
-- Cœur qui tombe par terre (“heart_drop”)
-- Joueur reçoit du dommage (“player_hit”)
-- Fin du jeu : une fois la partie terminée (“end”)
+- Coup d’épée (“attack”) ok
+- Décompte du début : à chaque étape (“countdown”) deja fait ?
+- Ramasser un rupee (“rupee_pickup”) ok
+- Ramasser un cœur (“heart_pickup”) pas testé mais ok
+- Frapper un poulet (“chicken_hit”) j'arrive pas à taper
+- Rupee qui tombe par terre (“rupee_drop”) ok mais je sais pas si c'est au bon endroit
+- Cœur qui tombe par terre (“heart_drop”) pas testé
+- Joueur reçoit du dommage (“player_hit”) ok
+- Fin du jeu : une fois la partie terminée (“end”) ok
 
 De plus, il y a un événement sonore en boucle, "chicken_idle", dont les propriétés varient selon un paramètre "NbChicken". Mettre ce paramètre à jour lors de la création et destruction d'un poulet. Il est paramétré à zéro dans le constructeur du composant *ChickenSpawnerComponent*.

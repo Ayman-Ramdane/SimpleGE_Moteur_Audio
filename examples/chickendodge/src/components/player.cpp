@@ -105,6 +105,7 @@ namespace ChickenDodge
     }
     else if (isHurt)
     {
+      AudioSystem::SendEvent("player_hit");
       delta = UpdateHurt();
     }
     else
@@ -131,11 +132,13 @@ namespace ChickenDodge
 
     if (rupee != nullptr)
     {
+      AudioSystem::SendEvent("rupee_pickup");
       score->Increment(rupee->GetValue());
       obj.GetParent()->RemoveChild(obj);
     }
     if (heart != nullptr)
     {
+      AudioSystem::SendEvent("heart_pickup");
       life->Increment(heart->GetHeal());
       obj.GetParent()->RemoveChild(obj);
     }
@@ -143,6 +146,8 @@ namespace ChickenDodge
     {
       if (isAttacking)
       {
+        AudioSystem::SendEvent("heart_pickup");
+
         chicken->OnAttack();
       }
       else
@@ -259,6 +264,7 @@ namespace ChickenDodge
     if (!isAttacking && input->IsActive(InputComponent::Action::Attack))
     {
       isAttacking = true;
+      AudioSystem::SendEvent("attack");
       sprite->SetAnimationFrame(1);
       sprite->SetFrameSkip(1);
     }

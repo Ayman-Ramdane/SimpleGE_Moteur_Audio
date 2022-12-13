@@ -23,6 +23,7 @@ namespace ChickenDodge
     type = randomType->first;
     value = randomType->second;
     remaining = descr.lifetime;
+    AudioSystem::SendEvent("rupee_drop");
 
     return {this,
             {{[this]() { return Owner().GetComponent<SpriteComponent>()->Ready(); },
