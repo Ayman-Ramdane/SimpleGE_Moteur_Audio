@@ -104,11 +104,11 @@ Sous Windows, CMake devrait trouver automatiquement les fichiers pertinents de F
 
 La liste de sons à déclencher est la suivante, un exemple est fait dans la méthode "ShowImage" du composant *CountdownComponent*:
 - Coup d’épée (“attack”) ok
-- Décompte du début : à chaque étape (“countdown”) deja fait ?
+- Décompte du début : à chaque étape (“countdown”) deja fait
 - Ramasser un rupee (“rupee_pickup”) ok
 - Ramasser un cœur (“heart_pickup”) pas testé mais ok
 - Frapper un poulet (“chicken_hit”) j'arrive pas à taper
-- Rupee qui tombe par terre (“rupee_drop”) ok mais je sais pas si c'est au bon endroit
+- Rupee qui tombe par terre (“rupee_drop”) ok
 - Cœur qui tombe par terre (“heart_drop”) pas testé
 - Joueur reçoit du dommage (“player_hit”) ok
 - Fin du jeu : une fois la partie terminée (“end”) ok

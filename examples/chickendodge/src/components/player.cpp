@@ -9,6 +9,7 @@
 #include "chickendodge/components/score.h"
 
 using json = nlohmann::json;
+#include <iostream>
 
 using namespace SimpleGE;
 
@@ -146,7 +147,7 @@ namespace ChickenDodge
     {
       if (isAttacking)
       {
-        AudioSystem::SendEvent("heart_pickup");
+        AudioSystem::SendEvent("chicken_hit");
 
         chicken->OnAttack();
       }
