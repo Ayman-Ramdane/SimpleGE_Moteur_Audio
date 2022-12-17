@@ -55,6 +55,10 @@ namespace ChickenDodge
 
   void ChickenSpawnerComponent::Spawn(const Timing& timing)
   {
+    //Ajout son
+    NbChicken = NbChicken + 1;
+    AudioSystem::SetProperty("NbChicken", NbChicken);
+
     float x, y;
     if (std::rand() % 2 == 0)
     {

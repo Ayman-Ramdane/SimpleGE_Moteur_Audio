@@ -4,6 +4,8 @@
 
 namespace ChickenDodge
 {
+  //nomnbre de poulets
+  static float NbChicken;
   class ChickenSpawnerComponent : public SimpleGE::LogicComponent
   {
   public:

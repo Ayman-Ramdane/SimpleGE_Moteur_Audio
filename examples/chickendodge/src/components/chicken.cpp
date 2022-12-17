@@ -1,6 +1,7 @@
 #include "chickendodge/pch/precomp.h"
 
 #include "chickendodge/components/chicken.h"
+#include "chickendodge/components/chickenspawner.h"
 
 using json = nlohmann::json;
 
@@ -67,6 +68,9 @@ namespace ChickenDodge
     if (distance > 500.F)
     {
       Owner().GetParent()->RemoveChild(Owner());
+      //On enlève le son
+      NbChicken = NbChicken -1;
+      AudioSystem::SetProperty("NbChicken", NbChicken);
     }
   }
 
