@@ -107,9 +107,9 @@ La liste de sons à déclencher est la suivante, un exemple est fait dans la mé
 - Décompte du début : à chaque étape (“countdown”) deja fait
 - Ramasser un rupee (“rupee_pickup”) ok
 - Ramasser un cœur (“heart_pickup”) pas testé mais ok
-- Frapper un poulet (“chicken_hit”) j'arrive pas à taper
+- Frapper un poulet (“chicken_hit”) ok
 - Rupee qui tombe par terre (“rupee_drop”) ok
-- Cœur qui tombe par terre (“heart_drop”) pas testé
+- Cœur qui tombe par terre (“heart_drop”) ok
 - Joueur reçoit du dommage (“player_hit”) ok
 - Fin du jeu : une fois la partie terminée (“end”) ok
 
